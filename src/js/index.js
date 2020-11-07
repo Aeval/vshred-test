@@ -1,11 +1,32 @@
 // Set up button snap on scroll
 $(function () {
 	$(window).on('scroll', function () {
-		if ($(window).width() < 769 && $(window).height() > 800 && $(window).scrollTop() >= 150) {
+		if ($(window).width() < 769 && $(window).height() > 800 && $(window).scrollTop() >= 50) {
+			$('button')[0].animate(
+				{
+					width: '90%',
+					margin: '0 5%',
+				},
+				2000
+			);
 			$('button').addClass('fixed-button');
 		} else if ($(window).width() < 769 && $(window).height() < 800 && $(window).scrollTop() >= 220) {
+			$('button')[0].animate(
+				{
+					width: '90%',
+					margin: '0 5%',
+				},
+				2000
+			);
 			$('button').addClass('fixed-button');
 		} else {
+			$('button')[0].animate(
+				{
+					width: '100%',
+					margin: '0',
+				},
+				2000
+			);
 			$('button').removeClass('fixed-button');
 		}
 	});

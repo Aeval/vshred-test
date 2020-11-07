@@ -107,7 +107,6 @@ button {
 	height: 58px;
 	position: sticky;
 	bottom: 0;
-	transition: linear 0.5s;
 }
 
 /* Drop border on mobile card */
